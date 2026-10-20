@@ -1,8 +1,10 @@
-
+'''
 #programa que permite beber bebidas
 # solicitan unja opcion para elegir bebidas
 #pregunta cantidad de bebida 
 #muestra total a pagar
+'''
+
 print("=============================")
 print("Aguas frescas UAGro")
 print("Menu de bebidas")
@@ -12,4 +14,25 @@ print("3. Agua de horchata -$35")
 print("===============================")
 
 opcion= int(input("elige una opcion del menu: "))
-cantidas= int(input("Cuantos litros?"))
+cantidad= int(input("Cuantos litros?"))
+
+if opcion == 1:
+    bebida = "agua de mango"
+    precio = 40
+elif opcion == 2:
+    bebida = "agua de jamaica"
+    precio = 45
+elif opcion == 3:
+    bebida = "agua de horchata"
+    precio = 35
+else:
+    bebida = "no existe bebida"
+    precio = 0
+
+if precio > 0:
+    total = precio * cantidad
+    print(f'{bebida}')
+    print(f'{cantidad}')
+    print(f'total a pagar: {total}')
+else:
+    print("no existe la bebida")
