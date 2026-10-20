@@ -36,3 +36,22 @@ if precio > 0:
     print(f'total a pagar: {total}')
 else:
     print("no existe la bebida")
+=======
+if opcion ==1:
+    bebida="Agua de mango"
+    precio= 40
+elif opcion==2:
+    bebida="Agua de jamaica"
+    precio= 45
+elif opcion==3:
+    bebida="Agua de horchata"
+    precio= 35
+else:
+    bebida="no existe la bebida"
+    precio=0
+if precio>0:
+    total=precio * cantidad
+    print("f{cantidad} de")
+    print(f"total a pagar: {total}")
+else:
+    print("no existe la bebida ingresada")
